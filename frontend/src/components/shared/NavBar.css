@@ -1,0 +1,63 @@
+/* navbar.css */
+:root {
+  --navbar-height: 80px;
+}
+
+/* Navbar container */
+.navbar-container {
+  overflow-x: auto;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #dde9f0;
+  height: var(--navbar-height);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.content {
+  margin-top: var(--navbar-height);
+}
+
+/* Navbar list */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Navbar list items */
+.navbar li {
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+/* First item */
+.navbar .first-item {
+  margin-left: 40px;
+  margin-right: auto;
+  font-weight: bold;
+  font-family: "Tahoma";
+  font-size: 40px;
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  color: #dd2020;
+}
