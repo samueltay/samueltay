@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+.TwoColumnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.TwoColumnContainer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.RightContainer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+  justify-content: center;
+  text-align: left;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
