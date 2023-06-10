@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Grid from "@mui/material/Grid";
 
 function Home() {
   return (
@@ -7,21 +8,28 @@ function Home() {
       <Helmet>
         <title>Homepage</title>
       </Helmet>
-      <div className="TwoColumnContainer">
-        <div>
+      <Grid container spacing={2}>
+        <Grid container item xs={6} direction="column">
           <p>left</p>
-        </div>
-        <div className="RightContainer">
+        </Grid>
+        <Grid
+          container
+          item
+          xs={6}
+          direction="column"
+          textAlign={"left"}
+          paddingRight={"40px"}
+        >
           <h1>About Me</h1>
           <p>
-            I am currently a Robotics Engineer at Dexterity, a stealth startup
-            working warehouse automation using intelligent robots with
-            human-like dexterity. I recently graduated from UC Berkeley with my
-            MS degree in Mechanical Engineering. As an undergrad, I double
-            majored in Mechanical Engineering and Electrical Engineering and
-            Computer Science (EECS), also at UC Berkeley. I am particularly
-            interested in optimal control and artificial intelligence for
-            applications in autonomous vehicles and robotics.
+            I am currently a Robotics Software Engineer at Dexterity, a Series B
+            startup working warehouse automation using intelligent robotics. I
+            graduated from UC Berkeley with my MS degree in Mechanical
+            Engineering. As an undergrad, I double majored in Mechanical
+            Engineering and Electrical Engineering and Computer Science (EECS),
+            also at UC Berkeley. I am particularly interested in optimal control
+            and artificial intelligence for applications in autonomous vehicles
+            and robotics.
           </p>
           <p>
             I have a strong background in control theory, optimization, and
@@ -41,8 +49,8 @@ function Home() {
             Details about my individual projects and experiences can be found
             below.
           </p>
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </div>
   );
 }
