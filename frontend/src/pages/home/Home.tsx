@@ -27,6 +27,7 @@ function Home() {
             style={{
               padding: 40,
               border: "3px solid black",
+              borderRadius: "40px"
             }}
           >
             <p>image placeholder</p>
@@ -50,6 +51,7 @@ function Home() {
             style={{
               padding: 40,
               border: "3px solid black",
+              borderRadius: "40px"
             }}
           >
             <h1>About Me</h1>
