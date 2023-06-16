@@ -15,9 +15,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #dde9f0;
   height: var(--navbar-height);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
 
@@ -47,7 +46,7 @@
   margin-right: auto;
   font-weight: bold;
   font-family: "Tahoma";
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /* Navbar links */
