@@ -9,51 +9,47 @@ function Home() {
       <Helmet>
         <title>Homepage</title>
       </Helmet>
-      <Grid container spacing={0} maxWidth={1600}>
+      <Grid container spacing={0} maxWidth={1400}>
         <Grid
           container
           item
           xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          xl={6}
+          md={5}
           direction="column"
-          paddingLeft={"40px"}
-          paddingRight={"40px"}
+          paddingLeft={"20px"}
+          paddingRight={"20px"}
+          paddingTop={"40px"}
         >
           <Paper
             variant="outlined"
             rounded-square
             elevation={12}
             style={{
-              padding: 30,
-              border: "1px solid black",
+              padding: 40,
+              border: "3px solid black",
             }}
           >
-            <p>left</p>
+            <p>image placeholder</p>
           </Paper>
         </Grid>
         <Grid
           container
           item
           xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          xl={6}
+          md={7}
           direction="column"
           textAlign={"left"}
-          paddingLeft={"40px"}
-          paddingRight={"40px"}
+          paddingLeft={"20px"}
+          paddingRight={"20px"}
+          paddingTop={"40px"}
         >
           <Paper
             variant="outlined"
             rounded-square
             elevation={12}
             style={{
-              padding: 30,
-              border: "1px solid black",
+              padding: 40,
+              border: "3px solid black",
             }}
           >
             <h1>About Me</h1>
