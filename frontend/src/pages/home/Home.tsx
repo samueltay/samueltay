@@ -6,7 +6,7 @@ import GridItem from "../../components/shared/grid/GridItem";
 
 function Home() {
   return (
-    <div className="App">
+    <div className="App-main">
       <Helmet>
         <title>Homepage</title>
       </Helmet>

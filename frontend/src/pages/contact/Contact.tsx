@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
-    <div className="App">
+    <div className="App-main">
       <Helmet>
         <title>Contact</title>
       </Helmet>
