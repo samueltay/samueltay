@@ -3,12 +3,16 @@
     {
       "name": "Dexterity",
       "title": "Robotics Software Engineer",
-      "description": "Building distributed systems for real-time multi-agent coordination. Developing advanced scheduling and assignment algorithms for robotic order fulfillment. Creating simulations and models for algorithm evaluation and system integration/regression testing"
+      "description": [
+        "Building distributed systems for real-time multi-agent coordination. Developing advanced scheduling and assignment algorithms for robotic order fulfillment. Creating simulations and models for algorithm evaluation and system integration/regression testing"
+      ]
     },
     {
       "name": "UC Berkeley Model Predictive Control Lab",
       "title": "Student Research Assistant",
-      "description": "Modeled Arcadia corridor road network in Tass PreScan for vehicle control and traffic simulation."
+      "description": [
+        "Modeled Arcadia corridor road network in Tass PreScan for vehicle control and traffic simulation."
+      ]
     },
     {
       "name": "Aptiv Autonomous Mobility",

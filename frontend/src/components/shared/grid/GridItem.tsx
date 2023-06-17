@@ -1,9 +1,28 @@
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+import React from "react";
+import { Grid, Paper } from "@mui/material";
 
 interface GridItemProps {
   children: React.ReactNode;
   md?: boolean | "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+}
+
+interface GridContainerProps {
+  children: React.ReactNode;
+}
+
+interface PaperProps {
+  title?: string;
+  subtitle?: string;
+  body?: Array<string>;
+  md?: boolean | "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+}
+
+function GridContainer({ children }: GridContainerProps) {
+  return (
+    <Grid container sx={{ padding: "40px" }} spacing={2} maxWidth={1400}>
+      {children}
+    </Grid>
+  );
 }
 
 function GridItem({ children, md }: GridItemProps) {
@@ -14,23 +33,39 @@ function GridItem({ children, md }: GridItemProps) {
       xs={12}
       md={md}
       direction="column"
-      paddingLeft={"20px"}
-      paddingRight={"20px"}
-      paddingTop={"30px"}
+      gap={2}
+      justifyContent="flex-start"
     >
-      <Paper
-        variant="outlined"
-        rounded-square
-        elevation={12}
-        style={{
-          padding: 40,
-          border: "1px solid black",
-          borderRadius: "40px",
-        }}
-      >
-        {children}
-      </Paper>
+      {children}
     </Grid>
   );
 }
-export default GridItem;
+
+function PaperComponent({
+  title = "",
+  subtitle = "",
+  body = [],
+  md = "auto",
+}: PaperProps) {
+  return (
+    <GridItem md={md}>
+      <Paper
+        variant="outlined"
+        sx={{
+          padding: "40px",
+          border: "1px solid black",
+          borderRadius: "40px",
+          textAlign: "left",
+        }}
+      >
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+        {body.map((paragraph: string, index: number) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </Paper>
+    </GridItem>
+  );
+}
+
+export { GridContainer, PaperComponent };
