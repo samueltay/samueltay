@@ -16,7 +16,7 @@ function GridItem({ children, md }: GridItemProps) {
       direction="column"
       paddingLeft={"20px"}
       paddingRight={"20px"}
-      paddingTop={"40px"}
+      paddingTop={"30px"}
     >
       <Paper
         variant="outlined"
@@ -24,7 +24,7 @@ function GridItem({ children, md }: GridItemProps) {
         elevation={12}
         style={{
           padding: 40,
-          border: "3px solid black",
+          border: "1px solid black",
           borderRadius: "40px",
         }}
       >

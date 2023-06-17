@@ -1,7 +1,7 @@
 .App-main {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: calc(100vh - 80px);
   background-color: #eceff5;
   text-align: center;
 }
