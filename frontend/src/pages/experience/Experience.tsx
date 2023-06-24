@@ -12,8 +12,8 @@ function Experience() {
       <Helmet>
         <title>Experience</title>
       </Helmet>
-      <GridContainer>
-        {jsonData.experience.map((item, index) => (
+      <GridContainer maxWidth={1000}>
+        {jsonData.experience.map((item) => (
           <PaperComponent
             md={12}
             title={item.name}
