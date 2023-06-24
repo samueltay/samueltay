@@ -8,6 +8,8 @@ interface GridItemProps {
 
 interface GridContainerProps {
   children: React.ReactNode;
+  padding?: string;
+  maxWidth?: number;
 }
 
 interface PaperProps {
@@ -17,15 +19,24 @@ interface PaperProps {
   md?: boolean | "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 }
 
-function GridContainer({ children }: GridContainerProps) {
+function GridContainer({
+  children,
+  padding = "40px",
+  maxWidth = 1400,
+}: GridContainerProps) {
   return (
-    <Grid container sx={{ padding: "40px" }} spacing={2} maxWidth={1400}>
+    <Grid
+      container
+      sx={{ padding: { padding } }}
+      spacing={2}
+      maxWidth={maxWidth}
+    >
       {children}
     </Grid>
   );
 }
 
-function GridItem({ children, md }: GridItemProps) {
+function GridItem({ children, md = "auto" }: GridItemProps) {
   return (
     <Grid
       container
@@ -53,8 +64,7 @@ function PaperComponent({
         variant="outlined"
         sx={{
           padding: "40px",
-          border: "1px solid black",
-          borderRadius: "40px",
+          borderRadius: "30px",
           textAlign: "left",
         }}
       >
