@@ -9,7 +9,8 @@ interface GridItemProps {
 interface GridContainerProps {
   children: React.ReactNode;
   padding?: string;
-  maxWidth?: number;
+  maxWidth?: number | "auto";
+  maxHeight?: number | "auto";
 }
 
 interface PaperProps {
@@ -23,6 +24,7 @@ function GridContainer({
   children,
   padding = "40px",
   maxWidth = 1400,
+  maxHeight = "auto",
 }: GridContainerProps) {
   return (
     <Grid
@@ -30,6 +32,7 @@ function GridContainer({
       sx={{ padding: { padding } }}
       spacing={2}
       maxWidth={maxWidth}
+      maxHeight={maxHeight}
     >
       {children}
     </Grid>
