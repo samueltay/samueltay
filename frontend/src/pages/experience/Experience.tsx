@@ -1,10 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import jsonData from "./textContent.json";
-import {
-  GridContainer,
-  PaperComponent,
-} from "../../components/shared/grid/GridItem";
+import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
 
 function Experience() {
   return (
