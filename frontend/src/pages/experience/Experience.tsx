@@ -15,7 +15,8 @@ function Experience() {
             md={12}
             title={item.name}
             subtitle={item.title}
-            body={item.description}
+            body={["Placeholder"]}
+            // body={item.description}
           />
         ))}
       </GridContainer>
