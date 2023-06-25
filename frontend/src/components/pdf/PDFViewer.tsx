@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { PDFDocumentProxy } from "pdfjs-dist";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -8,15 +8,25 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 interface PDFViewerProps {
   file: string;
+  pageNumber: number;
+  setPageNumber: (pageNumber: number) => void;
 }
 
-const PDFViewer: React.FC<PDFViewerProps> = ({ file }) => {
+const PDFViewer: React.FC<PDFViewerProps> = ({
+  file,
+  pageNumber,
+  setPageNumber,
+}) => {
   const [numPages, setNumPages] = useState<number>(0);
-  const [pageNumber, setPageNumber] = useState<number>(1);
 
   const handleLoadSuccess = ({ numPages }: PDFDocumentProxy) => {
     setNumPages(numPages);
   };
+
+  useEffect(() => {
+    // Reset the page number when the file changes
+    setPageNumber(1);
+  }, [file, setPageNumber]);
 
   const handlePageChange = (newPageNumber: number) => {
     setPageNumber(newPageNumber);
