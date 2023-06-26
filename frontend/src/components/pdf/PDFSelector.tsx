@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import PDFViewer from "./PDFViewer";
+import { MobileContext } from "../screen_size/MobileContext";
 
 interface PDFFile {
   name: string;
@@ -13,6 +14,7 @@ interface PDFSelectorProps {
 const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
   const [selectedFile, setSelectedFile] = useState(0);
   const [pageNumber, setPageNumber] = useState(1);
+  const { isMobile } = useContext(MobileContext);
 
   const handleFileSelect = (index: number) => {
     setSelectedFile(index);
@@ -40,13 +42,17 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
           </button>
         ))}
       </div>
-      <div>
-        <PDFViewer
-          file={files[selectedFile].file}
-          pageNumber={pageNumber}
-          setPageNumber={setPageNumber} // Pass the setPageNumber function as prop
-        />
-      </div>
+      {isMobile ? (
+        <div></div>
+      ) : (
+        <div>
+          <PDFViewer
+            file={files[selectedFile].file}
+            pageNumber={pageNumber}
+            setPageNumber={setPageNumber} // Pass the setPageNumber function as prop
+          />
+        </div>
+      )}
     </div>
   );
 };

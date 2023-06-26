@@ -19,6 +19,7 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
   background-color: #ffffff;
+  align-items: center;
 }
 
 .content {
@@ -59,5 +60,75 @@
 
 /* Navbar link hover effect */
 .navbar a:hover {
+  color: #dd2020;
+}
+
+/* Hamburger Component CSS */
+
+.hamburger-component {
+  position: relative;
+  padding-right: 40px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger.open span:first-child {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:last-child {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 57px;
+  right: -40px;
+  z-index: 10;
+  background-color: #e4b0b0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.dropdown a:hover {
   color: #dd2020;
 }
