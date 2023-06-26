@@ -36,11 +36,20 @@ const HamburgerComponent: React.FC<HamburgerComponentProps> = ({ links }) => {
       {isOpen && (
         <ul className="dropdown">
           {links.map((link, index) => (
-            <li key={index}>
-              <Link to={link.to} onClick={closeMenu}>
+            <Link to={link.to} onClick={closeMenu}>
+              <div
+                style={{
+                  display: "block",
+                  width: "150px",
+                  padding: "15px",
+                  fontSize: "16px",
+                  cursor: "pointer",
+                  border: "none",
+                }}
+              >
                 {link.label}
-              </Link>
-            </li>
+              </div>
+            </Link>
           ))}
         </ul>
       )}
