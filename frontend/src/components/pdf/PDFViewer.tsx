@@ -42,7 +42,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
       </button>
       <div className="pdf-viewer">
         <Document file={file} onLoadSuccess={handleLoadSuccess}>
-          <Page pageNumber={pageNumber} height={600} />
+          <Page pageNumber={pageNumber} width={600} />
         </Document>
         <p>
           Page {pageNumber} of {numPages}

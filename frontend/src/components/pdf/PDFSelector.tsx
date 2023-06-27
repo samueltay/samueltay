@@ -23,7 +23,7 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
 
   return (
     <div style={{ display: "flex" }}>
-      <div style={{ paddingRight: "60px" }}>
+      <div style={{ paddingRight: "20px" }}>
         {files.map((pdf, index) => (
           <button
             key={index}
@@ -49,7 +49,7 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
           <PDFViewer
             file={files[selectedFile].file}
             pageNumber={pageNumber}
-            setPageNumber={setPageNumber} // Pass the setPageNumber function as prop
+            setPageNumber={setPageNumber}
           />
         </div>
       )}
