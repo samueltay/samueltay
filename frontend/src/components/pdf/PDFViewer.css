@@ -1,0 +1,22 @@
+.pdf-viewer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.pdf-viewer-container button {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
+  width: 30px;
+}
+
+.pdf-viewer {
+  position: relative;
+}
+
+.pdf-viewer p {
+  text-align: center;
+}

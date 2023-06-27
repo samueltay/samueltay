@@ -3,6 +3,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import { PDFDocumentProxy } from "pdfjs-dist";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
+import "./PDFViewer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -24,7 +25,6 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
   };
 
   useEffect(() => {
-    // Reset the page number when the file changes
     setPageNumber(1);
   }, [file, setPageNumber]);
 
@@ -33,27 +33,27 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
   };
 
   return (
-    <div>
-      <Document file={file} onLoadSuccess={handleLoadSuccess}>
-        <Page pageNumber={pageNumber} height={600} />
-      </Document>
-      <div>
+    <div className="pdf-viewer-container">
+      <button
+        disabled={pageNumber <= 1}
+        onClick={() => handlePageChange(pageNumber - 1)}
+      >
+        <i className="fas fa-chevron-left"></i>
+      </button>
+      <div className="pdf-viewer">
+        <Document file={file} onLoadSuccess={handleLoadSuccess}>
+          <Page pageNumber={pageNumber} height={600} />
+        </Document>
         <p>
           Page {pageNumber} of {numPages}
         </p>
-        <button
-          disabled={pageNumber <= 1}
-          onClick={() => handlePageChange(pageNumber - 1)}
-        >
-          Previous Page
-        </button>
-        <button
-          disabled={pageNumber >= numPages}
-          onClick={() => handlePageChange(pageNumber + 1)}
-        >
-          Next Page
-        </button>
       </div>
+      <button
+        disabled={pageNumber >= numPages}
+        onClick={() => handlePageChange(pageNumber + 1)}
+      >
+        <i className="fas fa-chevron-right"></i>
+      </button>
     </div>
   );
 };
