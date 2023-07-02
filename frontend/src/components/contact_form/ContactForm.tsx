@@ -1,4 +1,7 @@
 import React, { useState, FormEvent } from "react";
+import { Helmet } from "react-helmet";
+import { GridContainer } from "../../components/grid/GridItem";
+import "./ContactForm.css";
 
 const ContactForm: React.FC = () => {
   const [name, setName] = useState("");
@@ -36,39 +39,45 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          ></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+    <div className="contact-form-container">
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
+      <GridContainer maxWidth={1000}>
+        <form onSubmit={handleSubmit}>
+          <h2>Contact Form</h2>
+          <div>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div>
+            <textarea
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </GridContainer>
     </div>
   );
 };
