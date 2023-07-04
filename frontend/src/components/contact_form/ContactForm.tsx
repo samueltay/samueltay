@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState, useEffect, FormEvent, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { GridContainer } from "../../components/grid/GridItem";
 import "./ContactForm.css";
@@ -9,8 +9,17 @@ const ContactForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
   const GOOGLE_FORM_ACTION_URL =
     "https://docs.google.com/forms/d/e/1FAIpQLSf2p574ah1qEIN7Xp0qapKs5E8Y7F2KBulJ5mGe5_Zsn6Au2Q/formResponse";
+
+  useEffect(() => {
+    if (messageRef.current) {
+      messageRef.current.style.height = "auto";
+      messageRef.current.style.height = `${messageRef.current.scrollHeight}px`;
+    }
+  }, [message]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -70,6 +79,7 @@ const ContactForm: React.FC = () => {
             <textarea
               id="message"
               value={message}
+              ref={messageRef}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message"
               required
