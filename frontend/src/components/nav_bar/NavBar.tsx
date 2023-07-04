@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import { MobileContext } from "../screen_size/MobileContext";
+import { ScreenSizeContext } from "../screen_size/ScreenSizeContext";
 import HamburgerComponent from "./HamburgerComponent";
 
 const Navbar = () => {
-  const { isMobile } = useContext(MobileContext);
+  const { windowWidth } = useContext(ScreenSizeContext);
   const navbarLinks = [
     { to: "/experience", label: "Experience" },
     { to: "/projects", label: "Projects" },
@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link to="/">Samuel Tay</Link>
           </li>
         </ul>
-        {isMobile ? (
+        {windowWidth < 650 ? (
           /* Render hamburger component if on mobile view */
           <HamburgerComponent links={navbarLinks} />
         ) : (

@@ -8,12 +8,12 @@ import Research from "./pages/research/Research";
 import Contact from "./pages/contact/Contact";
 import NotFound from "./pages/not_found/NotFound";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { MobileProvider } from "./components/screen_size/MobileContext";
+import { ScreenSizeProvider } from "./components/screen_size/ScreenSizeContext";
 
 function App() {
   return (
     <Router>
-      <MobileProvider>
+      <ScreenSizeProvider>
         <Navbar />
         <div className="content">
           <Routes>
@@ -25,7 +25,7 @@ function App() {
             <Route path="*" element={<NotFound />} />{" "}
           </Routes>
         </div>
-      </MobileProvider>
+      </ScreenSizeProvider>
     </Router>
   );
 }
