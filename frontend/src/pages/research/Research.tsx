@@ -9,7 +9,7 @@ function Research() {
       <Helmet>
         <title>Research</title>
       </Helmet>
-      <div style={{ padding: 20 }}>
+      <div>
         <PDFSelector
           files={[
             {

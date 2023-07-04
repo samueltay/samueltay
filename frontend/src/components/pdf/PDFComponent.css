@@ -46,11 +46,9 @@
 }
 
 .pdf-selector-external {
-  position: fixed;
-  bottom: 0;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 
 .pdf-selector-external button {
