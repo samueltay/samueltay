@@ -44,7 +44,19 @@ const ContactForm: React.FC = () => {
   };
 
   if (submitted) {
-    return <div>Thank you for submitting the form!</div>;
+    return (
+      <div className="contact-form-container">
+        <Helmet>
+          <title>Contact</title>
+        </Helmet>
+        <GridContainer maxWidth={1000}>
+          <div className="submitted-container">
+            <h2>Thank you for sending me a message!</h2>
+            <p>I will try my best to get back to you shortly.</p>
+          </div>
+        </GridContainer>
+      </div>
+    );
   }
 
   return (
