@@ -1,0 +1,82 @@
+.pdf-viewer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pdf-viewer-container button {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  width: 40px;
+}
+
+.pdf-viewer {
+  position: relative;
+}
+
+.pdf-viewer p {
+  text-align: center;
+}
+
+.pdf-selector-button {
+  display: block;
+  margin: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #bbbbbb;
+  color: gray;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-selector-button:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-selector-button:disabled {
+  background-color: #ffffff;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-selector-external {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pdf-selector-external button {
+  display: block;
+  margin: 5px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.pdf-selector-external .new-tab-button {
+  background-color: #5b98c0;
+  color: white;
+}
+.pdf-selector-external .new-tab-button:hover {
+  background-color: #385d76;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-selector-external .download-button {
+  background-color: #5b5ec0;
+  color: white;
+}
+.pdf-selector-external .download-button:hover {
+  background-color: #2d3268;
+  transition: background-color 0.3s ease;
+}

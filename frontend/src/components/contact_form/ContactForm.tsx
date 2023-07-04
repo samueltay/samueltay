@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
       </Helmet>
       <GridContainer maxWidth={1000}>
         <form onSubmit={handleSubmit}>
-          <h2>Contact Form</h2>
+          <h2>Contact Me</h2>
           <div>
             <input
               type="text"
