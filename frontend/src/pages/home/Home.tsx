@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="App-main">
       <Helmet>
-        <title>Homepage</title>
+        <title>Samuel Tay Homepage</title>
       </Helmet>
       <GridContainer>
         <PaperComponent md={5} />
