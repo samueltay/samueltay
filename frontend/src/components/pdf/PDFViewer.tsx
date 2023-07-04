@@ -8,12 +8,14 @@ import "./PDFViewer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 interface PDFViewerProps {
+  pdfWidth?: number;
   file: string;
   pageNumber: number;
   setPageNumber: (pageNumber: number) => void;
 }
 
 const PDFViewer: React.FC<PDFViewerProps> = ({
+  pdfWidth = 600,
   file,
   pageNumber,
   setPageNumber,
@@ -42,7 +44,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({
       </button>
       <div className="pdf-viewer">
         <Document file={file} onLoadSuccess={handleLoadSuccess}>
-          <Page pageNumber={pageNumber} width={600} />
+          <Page pageNumber={pageNumber} width={pdfWidth} />
         </Document>
         <p>
           Page {pageNumber} of {numPages}

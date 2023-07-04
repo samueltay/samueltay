@@ -5,11 +5,11 @@ import PDFSelector from "../../components/pdf/PDFSelector";
 
 function Research() {
   return (
-    <div className="App-main">
+    <div className="App-main" style={{ justifyContent: "left" }}>
       <Helmet>
         <title>Research</title>
       </Helmet>
-      <GridContainer>
+      <div style={{ padding: 20 }}>
         <PDFSelector
           files={[
             {
@@ -26,7 +26,7 @@ function Research() {
             },
           ]}
         />
-      </GridContainer>
+      </div>
     </div>
   );
 }

@@ -21,6 +21,11 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
     setPageNumber(1); // Reset the page number to 1 when selecting a new file
   };
 
+  const calculateViewerWidth = () => {
+    const roundedWidth = Math.floor(windowWidth / 50) * 50;
+    return Math.min(roundedWidth - 445, 800);
+  };
+
   return (
     <div style={{ display: "flex" }}>
       <div>
@@ -42,11 +47,12 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
           </button>
         ))}
       </div>
-      {windowWidth < 1045 ? (
+      {windowWidth < 850 ? (
         <div></div>
       ) : (
         <div>
           <PDFViewer
+            pdfWidth={calculateViewerWidth()}
             file={files[selectedFile].file}
             pageNumber={pageNumber}
             setPageNumber={setPageNumber}
