@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.footer p {
+  color: #fff;
+}
+
 .slider-container {
   position: absolute;
   height: 30px;
@@ -56,4 +60,25 @@
 
 .slider:checked + .slider-label:before {
   transform: translateX(20px);
+}
+
+.social-icons {
+  display: flex;
+  position: absolute;
+  left: 0;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 20px;
+  color: #fff;
+}
+
+.icon:hover {
+  color: #ccc;
+}
+
+.icon:last-child {
+  margin-right: 0;
 }
