@@ -43,7 +43,7 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
     window.open(selectedFileUrl, "_blank");
   };
 
-  const selectionButtons = (buttonWidth: number = 300) => {
+  const selectionButtons = (buttonWidth: string) => {
     const isVertical = windowWidth < hidePDFWidth;
     return (
       <div>
@@ -70,7 +70,7 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
             className="new-tab-button"
             onClick={handleOpenInNewTab}
             style={{
-              width: isVertical ? (windowWidth - 60) / 2 : buttonWidth,
+              width: isVertical ? (windowWidth - 40) / 2 : buttonWidth,
             }}
           >
             Open in New Tab
@@ -79,7 +79,7 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
             className="download-button"
             onClick={handleDownload}
             style={{
-              width: isVertical ? (windowWidth - 60) / 2 : buttonWidth,
+              width: isVertical ? (windowWidth - 40) / 2 : buttonWidth,
             }}
           >
             Download PDF
@@ -97,10 +97,10 @@ const PDFSelector: React.FC<PDFSelectorProps> = ({ files }) => {
   return (
     <div style={{ position: "relative", minHeight: "100vh" }}>
       {windowWidth < hidePDFWidth ? (
-        <div>{selectionButtons(windowWidth - 60)}</div>
+        <div>{selectionButtons("calc(100% - 2 * 15px)")}</div>
       ) : (
         <div style={{ display: "flex" }}>
-          {selectionButtons()}
+          {selectionButtons("300px")}
           <div>
             <PDFViewer
               pdfWidth={calculateViewerWidth()}
