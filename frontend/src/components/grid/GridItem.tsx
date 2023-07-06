@@ -3,7 +3,7 @@ import { Grid, Paper } from "@mui/material";
 
 interface GridItemProps {
   children: React.ReactNode;
-  md?: boolean | "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+  md?: "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 }
 
 interface GridContainerProps {
@@ -14,10 +14,8 @@ interface GridContainerProps {
 }
 
 interface PaperProps {
-  title?: string;
-  subtitle?: string;
-  body?: Array<string>;
-  md?: boolean | "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+  children: React.ReactNode;
+  md?: "auto" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 }
 
 function GridContainer({
@@ -55,12 +53,7 @@ function GridItem({ children, md = "auto" }: GridItemProps) {
   );
 }
 
-function PaperComponent({
-  title = "",
-  subtitle = "",
-  body = [],
-  md = "auto",
-}: PaperProps) {
+function PaperComponent({ children, md = "auto" }: PaperProps) {
   return (
     <GridItem md={md}>
       <Paper
@@ -71,11 +64,7 @@ function PaperComponent({
           textAlign: "left",
         }}
       >
-        <h1>{title}</h1>
-        <h2>{subtitle}</h2>
-        {body.map((paragraph: string, index: number) => (
-          <p key={index}>{paragraph}</p>
-        ))}
+        {children}
       </Paper>
     </GridItem>
   );

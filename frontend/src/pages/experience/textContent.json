@@ -13,7 +13,8 @@
         "To improve efficiency and reliability, I created a scalable automated regression simulation pipeline. This pipeline was capable of running large-scale simulations automatically and leveraged Terraform to provision virtual machines in the Google Cloud Platform. It played a crucial role in detecting over 10 regressions before deployment to production, facilitating large-scale parameter tuning experiments, and integrating with the customer's Warehouse Management System for predictive planning.",
 
         "Overall, as a Robotics Software Engineer at Dexterity, my work has involved designing high-performance state management systems, developing advanced task allocation and dispatch systems, contributing to core algorithms, and creating scalable automated regression simulation pipelines. These efforts have significantly contributed to the efficiency, reliability, and extensibility of the robotic automation solutions offered by Dexterity."
-      ]
+      ],
+      "image_path": "logos/dexterity_logo.jpg"
     },
     {
       "name": "UC Berkeley Model Predictive Control Lab",
@@ -30,7 +31,8 @@
         "To facilitate efficient testing and tuning of control algorithms, I developed a Hardware-in-the-Loop simulation platform. This platform utilized simulated data and integrated test vehicle hardware, enabling rapid and accurate evaluation of control algorithms within a controlled environment.",
 
         "As a research assistant, my work at the UC Berkeley Model Predictive Control lab involved a range of activities, including road network modeling, traffic simulation, real-world testing, data analysis, controller development, and simulation platform creation. These contributions were aimed at advancing the understanding and application of control systems for autonomous vehicles."
-      ]
+      ],
+      "image_path": "logos/mpc_logo.png"
     },
     {
       "name": "Aptiv Autonomous Mobility",
@@ -45,7 +47,8 @@
         "A crucial aspect of my internship involved enhancing vehicle state estimation for optimal control. To achieve this, I implemented and compared two advanced algorithms: the Kalman Filter and Moving Horizon Estimation. By evaluating their performance, I was able to improve the accuracy and reliability of the vehicle state estimation process.",
 
         "Overall, my internship experience at Aptiv as a Controls Engineer allowed me to gain extensive knowledge and practical skills in optimal control, state estimation, and deep learning. I actively engaged with the latest research, evaluated and implemented different vehicle models, developed Neural Network-based models, and enhanced vehicle state estimation algorithms to contribute to the advancement of Aptiv's control systems."
-      ]
+      ],
+      "image_path": "logos/aptiv_logo.png"
     },
     {
       "name": "Ford Greenfield Labs",
@@ -58,7 +61,8 @@
         "In addition to simulator development, I participated in an internal Hackathon where my team developed an automated parking spot detection system. Leveraging sensors in future large fleets of autonomous vehicles, our system constantly updated information about available parking spaces on streets or in parking lots. This innovative solution aimed to enhance parking efficiency and facilitate autonomous vehicle navigation in urban environments.",
 
         "As an Autonomous Vehicle Simulation Software Engineer at Ford Greenfield Labs, I played a key role in simulator development, ground truth data processing, LIDAR modeling, and the creation of an automated parking spot detection system. These contributions showcased my expertise in simulation technologies, perception algorithms, and innovative problem-solving within the autonomous vehicle domain."
-      ]
+      ],
+      "image_path": "logos/ford_logo.png"
     }
   ]
 }

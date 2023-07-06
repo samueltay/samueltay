@@ -10,12 +10,15 @@ function Home() {
         <title>Samuel Tay Homepage</title>
       </Helmet>
       <GridContainer>
-        <PaperComponent md={5} />
-        <PaperComponent
-          md={7}
-          title={jsonData.about.title}
-          body={jsonData.about.body}
-        />
+        <PaperComponent md={5}> </PaperComponent>
+        <PaperComponent md={7}>
+          <div>
+            <h1>{jsonData.about.title}</h1>
+            {jsonData.about.body.map((paragraph: string, index: number) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </PaperComponent>
       </GridContainer>
     </div>
   );
