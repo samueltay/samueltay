@@ -1,0 +1,10 @@
+{
+  "experience": [
+    {
+      "name": "Personal Website",
+      "summary": "Built this website to learn React",
+      "description": ["Project description"],
+      "image_path": "project_images/react_website.png"
+    }
+  ]
+}
