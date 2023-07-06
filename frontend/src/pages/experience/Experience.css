@@ -1,0 +1,9 @@
+.horizontal-components {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-components {
+  justify-content: center;
+  align-content: center;
+}

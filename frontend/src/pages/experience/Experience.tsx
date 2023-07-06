@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
 import jsonData from "./textContent.json";
 import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
+import { ScreenSizeContext } from "../../components/screen_size/ScreenSizeContext";
+import ExpandableButton from "../../components/expandable_button/ExpandableButton";
+import "./Experience.css";
 
 function Experience() {
+  const { windowWidth } = useContext(ScreenSizeContext);
+  const [expandedIndex, setExpandedIndex] = useState(-1);
+
+  const handlePaperClick = (index: number) => {
+    if (expandedIndex === index) {
+      // If already expanded, collapse it
+      setExpandedIndex(-1);
+    } else {
+      // If not expanded, expand it
+      setExpandedIndex(index);
+    }
+  };
+
   return (
     <div className="App-main">
       <Helmet>
@@ -12,18 +28,30 @@ function Experience() {
       <GridContainer maxWidth={1000}>
         {jsonData.experience.map((item) => (
           <PaperComponent md={12}>
-            <div style={{ display: "flex", alignItems: "flex-start" }}>
-              <div style={{ padding: 40 }}>
-                <img src={item.image_path} width={200} />
+            <div className="vertical-components">
+              <div
+                className={`${
+                  windowWidth < 600
+                    ? "vertical-components"
+                    : "horizontal-components"
+                }`}
+              >
+                <div style={{ padding: 30, justifyContent: "center" }}>
+                  <img src={item.image_path} width={200} />
+                </div>
+                <div className="vertical-components">
+                  <h1>{item.name}</h1>
+                  <h2>{item.title}</h2>
+                </div>
               </div>
-              <div>
-                <h1>{item.name}</h1>
-                <h2>{item.title}</h2>
-                {/* {item.description.map((paragraph: string, index: number) => ( */}
-                {["Placeholder"].map((paragraph: string, index: number) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
+              <ExpandableButton>
+                <div>
+                  {/* {item.description.map((paragraph: string, index: number) => ( */}
+                  {["Placeholder"].map((paragraph: string, index: number) => (
+                    <p key={index}>{paragraph}</p>
+                  ))}
+                </div>
+              </ExpandableButton>
             </div>
           </PaperComponent>
         ))}

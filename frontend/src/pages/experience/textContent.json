@@ -1,7 +1,7 @@
 {
   "experience": [
     {
-      "name": "Dexterity",
+      "name": "Dexterity Robotics",
       "title": "Robotics Software Engineer",
       "description": [
         "As a Robotics Software Engineer at Dexterity, my work encompasses a wide range of responsibilities and accomplishments. I designed and implemented a high-performance state management service capable of storing and modifying large, generic Protobuf state objects. This service efficiently processed thousands of CRUD requests per minute while ensuring persistence and extensibility. It was successfully deployed in a high-uptime warehouse with 16 robots, managing and tracking over 50,000 objects and handling more than 1 million requests daily.",
