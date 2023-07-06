@@ -7,5 +7,37 @@
       "Through internships, academic research, and extracurricular activities, I participated in projects ranging from developing novel algorithms for energy efficient autonomous vehicles using Learning Model Predictive Control (LMPC) to designing and building a competitive formula-style racecar. These opportunities have provided me with both exposure and experience, and I hope to continue strengthening my expertise and building new skills.",
       "For a detailed account of my individual projects and experiences, please explore all the pages."
     ]
-  }
+  },
+  "timeline": [
+    {
+      "date": "August 2015",
+      "description": "Started undergrad at UC Berkeley pursuing a BS in Mechanical Engineering",
+      "image_path": "timeline_logos/cal-logo.png"
+    },
+    {
+      "date": "May 2018",
+      "description": "Started internship at Ford Greenfield Labs working on simulation research for autonomous vehicles",
+      "image_path": "timeline_logos/ford-logo.png"
+    },
+    {
+      "date": "May 2019",
+      "description": "Graduated from UC Berkeley with double major in Mechanical Engineer and EECS",
+      "image_path": "timeline_logos/graduation-logo.png"
+    },
+    {
+      "date": "June 2019",
+      "description": "Started internship at Aptiv working on Controls for autonomous vehicles",
+      "image_path": "timeline_logos/aptiv-logo.png"
+    },
+    {
+      "date": "May 2020",
+      "description": "Graduated from UC Berkeley with MS in Mechanical Engineering",
+      "image_path": "timeline_logos/graduation-logo.png"
+    },
+    {
+      "date": "May 2020",
+      "description": "Started working at Dexterity as a Robotics Software Engineer",
+      "image_path": "timeline_logos/dexterity-logo.png"
+    }
+  ]
 }
