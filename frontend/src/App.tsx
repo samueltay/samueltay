@@ -14,8 +14,8 @@ import Footer from "./components/footer/Footer";
 function App() {
   const [funMode, setFunMode] = useState(false);
 
-  const handleFunModeToggle = (funMode: boolean) => {
-    setFunMode(funMode);
+  const handleFunModeToggle = (updatedFunMode: boolean) => {
+    setFunMode(updatedFunMode);
     // Perform any fun-mode related actions here
     if (funMode) {
       document.body.style.cursor =

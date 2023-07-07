@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Helmet } from "react-helmet";
 import jsonData from "./textContent.json";
 import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
@@ -8,17 +8,6 @@ import "./Experience.css";
 
 function Experience() {
   const { windowWidth } = useContext(ScreenSizeContext);
-  const [expandedIndex, setExpandedIndex] = useState(-1);
-
-  const handlePaperClick = (index: number) => {
-    if (expandedIndex === index) {
-      // If already expanded, collapse it
-      setExpandedIndex(-1);
-    } else {
-      // If not expanded, expand it
-      setExpandedIndex(index);
-    }
-  };
 
   return (
     <div className="App-main">
@@ -37,7 +26,7 @@ function Experience() {
                 }`}
               >
                 <div style={{ padding: 30, justifyContent: "center" }}>
-                  <img src={item.image_path} width={200} />
+                  <img src={item.image_path} alt={item.image_path} width={200} />
                 </div>
                 <div className="vertical-components">
                   <h1>{item.name}</h1>

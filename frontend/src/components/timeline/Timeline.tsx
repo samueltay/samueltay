@@ -35,7 +35,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
               onClick={() => handleEventClick(event.id)}
             >
               <div className="event-image">
-                <img src={event.image} height={40} />
+                <img src={event.image} height={40} alt={event.image} />
               </div>
               <div
                 className={`timeline-event-circle ${

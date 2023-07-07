@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import jsonData from "./textContent.json";
 import { Helmet } from "react-helmet";
 import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
@@ -25,7 +25,7 @@ function Projects() {
                 }`}
               >
                 <div style={{ padding: 30, justifyContent: "center" }}>
-                  <img src={item.image_path} width={200} />
+                  <img src={item.image_path} alt={item.image_path} width={200} />
                 </div>
                 <div className="vertical-components">
                   <h1>{item.name}</h1>
