@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { ScreenSizeContext } from "../screen_size/ScreenSizeContext";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaGraduationCap } from "react-icons/fa";
 import "./Footer.css";
 
 interface FooterProps {
@@ -36,6 +36,13 @@ const Footer: React.FC<FooterProps> = ({ onFunModeToggle }) => {
           rel="noopener noreferrer"
         >
           <FaGithub className="icon" />
+        </a>
+        <a
+          href="https://scholar.google.com/citations?user=N7zs5OAAAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGraduationCap className="icon" />
         </a>
       </div>
 
