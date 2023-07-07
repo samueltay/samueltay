@@ -4,9 +4,15 @@ import jsonData from "./textContent.json";
 import Timeline from "../../components/timeline/Timeline";
 import { ScreenSizeContext } from "../../components/screen_size/ScreenSizeContext";
 import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
+import TagManager from "react-gtm-module";
 
 function Home() {
   const { windowWidth } = useContext(ScreenSizeContext);
+  const tagManagerArgs = {
+    gtmId: "G-8L84XW685F",
+  };
+  TagManager.initialize(tagManagerArgs);
+
   return (
     <div className="App-main">
       <Helmet>
