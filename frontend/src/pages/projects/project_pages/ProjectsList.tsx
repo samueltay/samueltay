@@ -1,18 +1,20 @@
 import React, { useContext } from "react";
-import { Helmet } from "react-helmet";
 import jsonData from "./textContent.json";
-import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
-import { ScreenSizeContext } from "../../components/screen_size/ScreenSizeContext";
-import ExpandableButton from "../../components/expandable_button/ExpandableButton";
-import "./Experience.css";
+import { Helmet } from "react-helmet";
+import {
+  GridContainer,
+  PaperComponent,
+} from "../../../components/grid/GridItem";
+import { ScreenSizeContext } from "../../../components/screen_size/ScreenSizeContext";
+import { Link } from "react-router-dom";
 
-function Experience() {
+function ProjectsList() {
   const { windowWidth } = useContext(ScreenSizeContext);
 
   return (
     <div className="App-main">
       <Helmet>
-        <title>Experience</title>
+        <title>Projects</title>
       </Helmet>
       <GridContainer maxWidth={1000}>
         {jsonData.experience.map((item) => (
@@ -34,17 +36,14 @@ function Experience() {
                 </div>
                 <div className="vertical-components">
                   <h1>{item.name}</h1>
-                  <h2>{item.title}</h2>
+                  <h2>{item.summary}</h2>
+                  <Link to={item.id}>
+                    <div>
+                      <p>Learn More</p>
+                    </div>
+                  </Link>
                 </div>
               </div>
-              <ExpandableButton>
-                <div>
-                  {/* {item.description.map((paragraph: string, index: number) => ( */}
-                  {["Placeholder"].map((paragraph: string, index: number) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
-              </ExpandableButton>
             </div>
           </PaperComponent>
         ))}
@@ -53,4 +52,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default ProjectsList;

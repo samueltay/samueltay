@@ -14,7 +14,7 @@
 
         "Overall, as a Robotics Software Engineer at Dexterity, my work has involved designing high-performance state management systems, developing advanced task allocation and dispatch systems, contributing to core algorithms, and creating scalable automated regression simulation pipelines. These efforts have significantly contributed to the efficiency, reliability, and extensibility of the robotic automation solutions offered by Dexterity."
       ],
-      "image_path": "logos/dexterity_logo.jpg"
+      "image_path": "/logos/dexterity_logo.jpg"
     },
     {
       "name": "UC Berkeley Model Predictive Control Lab",
@@ -32,7 +32,7 @@
 
         "As a research assistant, my work at the UC Berkeley Model Predictive Control lab involved a range of activities, including road network modeling, traffic simulation, real-world testing, data analysis, controller development, and simulation platform creation. These contributions were aimed at advancing the understanding and application of control systems for autonomous vehicles."
       ],
-      "image_path": "logos/mpc_logo.png"
+      "image_path": "/logos/mpc_logo.png"
     },
     {
       "name": "Aptiv Autonomous Mobility",
@@ -48,7 +48,7 @@
 
         "Overall, my internship experience at Aptiv as a Controls Engineer allowed me to gain extensive knowledge and practical skills in optimal control, state estimation, and deep learning. I actively engaged with the latest research, evaluated and implemented different vehicle models, developed Neural Network-based models, and enhanced vehicle state estimation algorithms to contribute to the advancement of Aptiv's control systems."
       ],
-      "image_path": "logos/aptiv_logo.png"
+      "image_path": "/logos/aptiv_logo.png"
     },
     {
       "name": "Ford Greenfield Labs",
@@ -62,7 +62,7 @@
 
         "As an Autonomous Vehicle Simulation Software Engineer at Ford Greenfield Labs, I played a key role in simulator development, ground truth data processing, LIDAR modeling, and the creation of an automated parking spot detection system. These contributions showcased my expertise in simulation technologies, perception algorithms, and innovative problem-solving within the autonomous vehicle domain."
       ],
-      "image_path": "logos/ford_logo.png"
+      "image_path": "/logos/ford_logo.png"
     }
   ]
 }

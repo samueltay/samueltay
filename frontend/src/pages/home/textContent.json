@@ -12,32 +12,32 @@
     {
       "date": "August 2015",
       "description": "Started undergrad at UC Berkeley pursuing a BS in Mechanical Engineering",
-      "image_path": "timeline_logos/cal-logo.png"
+      "image_path": "/timeline_logos/cal-logo.png"
     },
     {
       "date": "May 2018",
       "description": "Started internship at Ford Greenfield Labs working on simulation research for autonomous vehicles",
-      "image_path": "timeline_logos/ford-logo.png"
+      "image_path": "/timeline_logos/ford-logo.png"
     },
     {
       "date": "May 2019",
       "description": "Graduated from UC Berkeley with double major in Mechanical Engineer and EECS",
-      "image_path": "timeline_logos/graduation-logo.png"
+      "image_path": "/timeline_logos/graduation-logo.png"
     },
     {
       "date": "June 2019",
       "description": "Started internship at Aptiv working on Controls for autonomous vehicles",
-      "image_path": "timeline_logos/aptiv-logo.png"
+      "image_path": "/timeline_logos/aptiv-logo.png"
     },
     {
       "date": "May 2020",
       "description": "Graduated from UC Berkeley with MS in Mechanical Engineering",
-      "image_path": "timeline_logos/graduation-logo.png"
+      "image_path": "/timeline_logos/graduation-logo.png"
     },
     {
       "date": "May 2020",
       "description": "Started working at Dexterity as a Robotics Software Engineer",
-      "image_path": "timeline_logos/dexterity-logo.png"
+      "image_path": "/timeline_logos/dexterity-logo.png"
     }
   ]
 }
