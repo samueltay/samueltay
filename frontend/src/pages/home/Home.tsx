@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Helmet } from "react-helmet";
-import jsonData from "./textContent.json";
+import homeJsonData from "./homeContent.json";
+import timelineJsonData from "./timelineContent.json";
 import Timeline from "../../components/timeline/Timeline";
 import { ScreenSizeContext } from "../../components/screen_size/ScreenSizeContext";
 import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
@@ -24,10 +25,12 @@ function Home() {
             <PaperComponent md={5}> </PaperComponent>
             <PaperComponent md={7}>
               <div>
-                <h1>{jsonData.about.title}</h1>
-                {jsonData.about.body.map((paragraph: string, index: number) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
+                <h1>{homeJsonData.about.title}</h1>
+                {homeJsonData.about.body.map(
+                  (paragraph: string, index: number) => (
+                    <p key={index}>{paragraph}</p>
+                  )
+                )}
               </div>
             </PaperComponent>
           </GridContainer>
@@ -35,7 +38,7 @@ function Home() {
         {windowWidth > 800 && (
           <div>
             <Timeline
-              events={jsonData.timeline.map((item, index: number) => ({
+              events={timelineJsonData.timeline.map((item, index: number) => ({
                 id: index.toString(),
                 date: item.date,
                 description: item.description,
