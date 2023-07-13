@@ -11,6 +11,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ScreenSizeProvider } from "./components/screen_size/ScreenSizeContext";
 import Footer from "./components/footer/Footer";
 
+import Charity from "./pages/temp/Charity";
+import Lift from "./pages/temp/Lift";
+import Coffee from "./pages/temp/Coffee";
+import Marmalade from "./pages/temp/Marmalade";
+import Funny from "./pages/temp/Funny";
+import Almond from "./pages/temp/Almond";
+import Bananagrams from "./pages/temp/Bananagrams";
+import Gift from "./pages/temp/Gift";
+import Kangaroo from "./pages/temp/Kangaroo";
+import Ikea from "./pages/temp/Ikea";
+
 function App() {
   const [funMode, setFunMode] = useState(false);
 
@@ -36,6 +47,18 @@ function App() {
             <Route path="/projects/*" element={<Projects />} />
             <Route path="/research" element={<Research />} />
             <Route path="/contact" element={<Contact />} />
+
+            <Route path="/charity" element={<Charity />} />
+            <Route path="/lift" element={<Lift />} />
+            <Route path="/coffee" element={<Coffee />} />
+            <Route path="/marmalade" element={<Marmalade />} />
+            <Route path="/funny" element={<Funny />} />
+            <Route path="/almond" element={<Almond />} />
+            <Route path="/bananagrams" element={<Bananagrams />} />
+            <Route path="/gift" element={<Gift />} />
+            <Route path="/kangaroo" element={<Kangaroo />} />
+            <Route path="/ikea" element={<Ikea />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
