@@ -12,13 +12,13 @@
     },
     {
       "date": "May 2019",
-      "description": "Graduated from UC Berkeley with double major in Mechanical Engineer and EECS",
+      "description": "Graduated from UC Berkeley with double major in Electrical Engineering and Computer Science (EECS) Mechanical Engineering",
       "image_path": "/timeline_logos/graduation-logo.png"
     },
     {
       "date": "June 2019",
-      "description": "Started internship at Aptiv working on Controls for autonomous vehicles",
-      "image_path": "/timeline_logos/aptiv-logo.png"
+      "description": "Started internship at Aptiv (now Motional) working on controls for autonomous vehicles",
+      "image_path": "/timeline_logos/motional_logo.png"
     },
     {
       "date": "May 2020",

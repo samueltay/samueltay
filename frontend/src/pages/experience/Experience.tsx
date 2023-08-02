@@ -39,8 +39,7 @@ function Experience() {
               </div>
               <ExpandableButton>
                 <div>
-                  {/* {item.description.map((paragraph: string, index: number) => ( */}
-                  {["Placeholder"].map((paragraph: string, index: number) => (
+                  {item.description.map((paragraph: string, index: number) => (
                     <p key={index}>{paragraph}</p>
                   ))}
                 </div>
