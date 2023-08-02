@@ -17,7 +17,7 @@ function Home() {
   return (
     <div className="App-main">
       <Helmet>
-        <title>Samuel Tay Homepage</title>
+        <title>Samuel Tay - Senior Software Engineer</title>
       </Helmet>
       <div>
         <div>
