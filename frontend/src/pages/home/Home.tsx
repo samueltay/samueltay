@@ -6,7 +6,6 @@ import Timeline from "../../components/timeline/Timeline";
 import { ScreenSizeContext } from "../../components/screen_size/ScreenSizeContext";
 import { GridContainer, PaperComponent } from "../../components/grid/GridItem";
 import TagManager from "react-gtm-module";
-import { Margin, Padding, RoundedCorner } from "@mui/icons-material";
 
 function Home() {
   const { windowWidth } = useContext(ScreenSizeContext);
@@ -24,7 +23,7 @@ function Home() {
         <div>
           <GridContainer>
             <div style={{ margin: "20px" }}>
-              <img src="homepage/main_photo.jpeg" width={350} />
+              <img src="homepage/main_photo.jpeg" width={350} alt="main" />
             </div>
             <PaperComponent md={7}>
               <div>
