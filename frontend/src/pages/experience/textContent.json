@@ -4,7 +4,7 @@
       "name": "Dexterity Robotics",
       "title": "Robotics Software Engineer",
       "description": [
-        "Dexterity is a Series B startup ($1.4B valuation) backed by Kleiner Perkins and Lightspeed Ventures. I joined as an early employee (~40) and made core contributions to the algorithms and simulations software stack. As an early employee at a high-growth startup, I was fortunate to be able to wear many hats, including also working on UI/UX, CI/CD automation, GCP deployments and automation, computer vision, robotic controls, recruiting, and much more. I have served as the team lead on several projects, managing engineering tasks and product requirements for my team.",
+        "Dexterity is a Series B startup ($1.4B valuation) backed by Kleiner Perkins and Lightspeed Ventures. I joined as an early employee (~30) and made core contributions to the algorithms and simulations software stack. As an early employee at a high-growth startup, I was fortunate to be able to wear many hats, including also working on UI/UX, CI/CD automation, GCP deployments and automation, computer vision, robotic controls, recruiting, and much more. I have served as the team lead on several projects, managing engineering tasks and product requirements for my team.",
 
         "One of my large contributions was designing and implementing a high-performance state management service capable of storing and modifying large, generic Protobuf state objects. This service efficiently processed thousands of CRUD requests per minute while ensuring persistence and extensibility. It was successfully deployed in a high-uptime warehouse with 16 robots, managing and tracking over 50,000 objects and handling more than 1 million requests daily.",
 
