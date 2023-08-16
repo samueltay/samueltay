@@ -1,0 +1,13 @@
+.custom-code-block-container {
+  display: flex;
+  justify-content: left;
+}
+
+.custom-code-block {
+  font-size: 12px;
+  padding: 10px;
+  max-width: 100%;
+  min-width: 50%;
+  white-space: pre-wrap;
+  overflow: auto;
+}
