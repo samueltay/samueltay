@@ -2,10 +2,10 @@
   "about": {
     "title": "About Me",
     "body": [
-      "I am currently a Software Engineer at Dexterity, a Series B startup specializing in warehouse automation through intelligent robotics. I hold an MS degree in Mechanical Engineering from UC Berkeley, where I also completed a double major in Electrical Engineering and Computer Science (EECS) and Mechanical Engineering.",
-      "I have a background in control theory, optimization, and computer science, but I also enjoy tinkering in machine learning, robotics, and creating fun spreadsheets. I really enjoy working on problems that can have large scale, real world impacts. I also really enjoy learning new things and use projects to motivate my curiosity.",
-      "Through work, internships, and academic research, I participated in projects ranging from developing novel algorithms for energy efficient autonomous vehicles using Learning Model Predictive Control (LMPC) to designing and building a competitive formula-style racecar.",
-      "For a detailed account of my individual projects and experiences, please explore the different pages on this site. Please also don't hesitate to reach out if you would like to get in touch!"
+      "Born and raised in Los Angeles, CA, I discovered my love for tinkering at a young age — leading me to start the first student robotics club at my public high school. From there, I was hooked on problem solving through tech, which led me up the coast to complete my B.S. in Mechanical Engineering, B.S. in Electrical Engineering and Computer Science (EECS), and my M.S. in Mechanical Engineering all at UC Berkeley. Currently, I spend much of my brain-space and excitement as a Software Engineer at Dexterity, a Series B startup specializing in warehouse automation through intelligent robotics.",
+      "My professional background in control theory, optimization, and computer science has never limited me in exploring all the other things I enjoy tinkering with, such as the bigger umbrellas of machine learning, robotics, and—one of my favorite pastimes—creating fun spreadsheets for my loved ones to use. I have always enjoyed working on problems that I know can have large scale, real world impacts. I also really enjoy learning new things and use all kinds of projects to motivate my curiosity.",
+      "Through work, academic research, and personal endeavors, I have participated in projects ranging from developing novel algorithms for energy efficient autonomous vehicles using Learning Model Predictive Control (LMPC) to designing and building a competitive formula-style racecar.",
+      "For a detailed account of my individual projects and experiences, please explore the different pages on this site. Please don't hesitate to reach out if you would like to get in touch!"
     ]
   }
 }
